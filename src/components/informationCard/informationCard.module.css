@@ -1,0 +1,34 @@
+.container {
+    background-color: transparent;
+    padding: 10%;
+}
+.buttonCircular {
+    font-size: 3rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    width: 100%;
+    height: fit-content;
+}
+.buttonNormal {
+    width: 100%;
+    font-size: 3rem;
+    border-radius: 0px;
+    border: none 0px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.title {
+    width: 100%;
+    height: 10%;
+}
+.information {
+    width: 96%;
+    height: 100%;
+    filter: brightness(0.8);
+    padding: 2%;
+    text-align: left;
+}
