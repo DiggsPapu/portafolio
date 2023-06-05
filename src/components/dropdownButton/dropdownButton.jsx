@@ -19,7 +19,12 @@ export default function DropdownButton({
       {isOpen && (
         <div className={styles.dropdownContent}>
           {
-            options.map((option) => (<p style={{ color }}>{option}</p>))
+            options.map((option) => (
+              <a href={option[0]} style={{ color }}>
+                {' '}
+                <img src={option[1]} alt="icon" />
+              </a>
+            ))
           }
         </div>
       )}
@@ -27,7 +32,7 @@ export default function DropdownButton({
   )
 }
 DropdownButton.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  options: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
   title: PropTypes.string.isRequired,
   color: PropTypes.string,
   backgroundColor: PropTypes.string,

@@ -1,16 +1,24 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import MainPage from './pages/main/MainPage'
+import NavBar from './components/navbar/navbar'
 import './App.css'
 
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={<MainPage />}
-      />
-    </Routes>
+
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <Routes>
+        <Route
+          path="/home/"
+          element={<MainPage />}
+        />
+      </Routes>
+
+    </>
   )
 }
 
