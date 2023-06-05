@@ -1,13 +1,16 @@
 import React from 'react'
-import InformationCard from './components/informationCard/informationCard'
+import { Route, Routes } from 'react-router-dom'
+import MainPage from './pages/main/MainPage'
 import './App.css'
 
 function App() {
   return (
-    <>
-      <InformationCard backgroundColor="black" />
-      <InformationCard backgroundColor="black" />
-    </>
+    <Routes>
+      <Route
+        path="/"
+        element={<MainPage />}
+      />
+    </Routes>
   )
 }
 

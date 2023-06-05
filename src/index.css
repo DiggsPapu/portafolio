@@ -1,0 +1,7 @@
+body {
+    background-color: black;
+}
+@font-face {
+    font-family: 'BillionDreams';
+    src: url('/src/fonts/BillionDreams_PERSONAL.ttf') format('truetype');
+}
