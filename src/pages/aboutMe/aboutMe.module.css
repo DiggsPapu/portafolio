@@ -1,0 +1,43 @@
+.aboutMe {
+    width: 100%;
+    height: 100vh;
+    color: red;
+}
+.cardOuter {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    gap: 30px;
+}
+.h2 {
+    font-family: 'RobotoRegular';
+    font-weight: bolder;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.trajectory{
+    margin-top:50px ; margin-bottom: 200px;
+}
+.goals {
+
+}
+.goals ul {
+    width: 80%;
+    list-style: none;
+    margin-right: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+li {
+    width: 100%;
+    margin-right: auto;
+}

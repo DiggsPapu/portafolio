@@ -1,7 +1,13 @@
 body {
-    background-color: black;
+    background-color: rgb(15, 19, 24);
 }
 @font-face {
     font-family: 'BillionDreams';
     src: url('/src/fonts/BillionDreams_PERSONAL.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('/src/fonts/Roboto-Regular.ttf') format('truetype');
+    letter-spacing: 1px;
 }

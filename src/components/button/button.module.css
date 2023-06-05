@@ -4,7 +4,8 @@
 }
 
 .buttonCircular {
-    font-family: 'BungeeShade';
+    /* font-family: 'RobotoRegular'; */
+    font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     border-radius: 10px;
     border: none;
@@ -14,7 +15,9 @@
     height: 100%;
 }
 .buttonNormal {
-    font-family: 'BungeeShade';
+    font-family: 'RobotoRegular';
+    letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     border-radius: 0px;
     border: none;
