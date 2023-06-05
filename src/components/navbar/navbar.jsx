@@ -13,7 +13,7 @@ export default function NavBar() {
   const body = 'I wanted to contact you for...'
   return (
     <nav className={styles.navbar}>
-      <Link to="/home" style={{ textDecoration: 'none' }}>
+      <Link to="/20172/portafolio/" style={{ textDecoration: 'none' }}>
         <Logo />
       </Link>
       <div className={styles.dropdown}>
@@ -21,7 +21,7 @@ export default function NavBar() {
       </div>
       <div className={styles.login}>
 
-        <Link to="/AboutMe" style={{ textDecoration: 'none' }}>
+        <Link to="/20172/portafolio/AboutMe" style={{ textDecoration: 'none' }}>
           <LoginButton text="About Me" />
         </Link>
       </div>

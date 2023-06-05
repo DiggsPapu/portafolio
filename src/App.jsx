@@ -17,13 +17,13 @@ function App() {
       </header>
       <Routes>
         <Route
-          path="/home/"
+          path="/20172/portafolio"
           element={<MainPage />}
         />
       </Routes>
       <Routes>
         <Route
-          path="/AboutMe/"
+          path="/20172/portafolio/AboutMe/"
           element={<AboutMe />}
         />
       </Routes>
