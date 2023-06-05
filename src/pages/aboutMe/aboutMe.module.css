@@ -1,7 +1,9 @@
 .aboutMe {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     color: red;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 .cardOuter {
     width: 80%;
@@ -40,4 +42,29 @@
 li {
     width: 100%;
     margin-right: auto;
+}
+.hob {
+    width: 82%;
+    margin: 4%;
+    background-color: #22273a;   
+    border-radius: 10px;
+    padding: 5%;
+}
+.hob ul li {
+    font-family: 'RobotoRegular';
+    font-size: 2rem;
+    color: white;
+}
+.hob ul {
+    list-style: disc;
+}
+
+@media only screen and (max-width: 750px) {
+    .cardOuter { display: flex; flex-direction: column; width: 60%; margin: 10%;}
+}
+@media only screen and (max-width: 300px) {
+    .h2 {font-size: 2.5rem; width: 100%; text-align: center;}
+    .cardOuter { display: flex; flex-direction: column; width: 80%; margin: 5%;}
+    .hob ul li { font-size: 1rem;}
+    .hob {width: 80%; margin: 10%;}
 }

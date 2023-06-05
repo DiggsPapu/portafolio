@@ -39,6 +39,17 @@ export default function AboutMe() {
         </ul>
         <div className={styles.hobbies} />
         <h2 className={styles.h2}>Hobbies</h2>
+        <div className={styles.hob}>
+          <ul>
+            <li>Chess</li>
+            <li>Swimming</li>
+            <li>Gym</li>
+            <li>Hanging out</li>
+            <li>Playing videogames</li>
+            <li>Playing soccer</li>
+            <li>Playing board games in general</li>
+          </ul>
+        </div>
       </div>
     </div>
   )

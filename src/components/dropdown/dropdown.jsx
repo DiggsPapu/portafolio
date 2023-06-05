@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import { CSSTransition } from 'react-transition-group'
 import style from './dropdown.module.css'
 
-function Dropdown({ title, subtitle, values, extra }) {
+function Dropdown({
+  title, subtitle, values, extra,
+}) {
   const [visible, setVisible] = useState(false)
 
   return (
@@ -23,7 +25,17 @@ function Dropdown({ title, subtitle, values, extra }) {
             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
             <g id="SVGRepo_iconCarrier">
               {' '}
-              <g> {' '} <path d="M50,27.5c0,0.8-0.7,1.5-1.5,1.5h-45C2.7,29,2,28.3,2,27.5v-3C2,23.7,2.7,23,3.5,23h45 c0.8,0,1.5,0.7,1.5,1.5V27.5z" /> {' '} </g> {' '}
+              <g>
+                {' '}
+                {' '}
+                {' '}
+                <path d="M50,27.5c0,0.8-0.7,1.5-1.5,1.5h-45C2.7,29,2,28.3,2,27.5v-3C2,23.7,2.7,23,3.5,23h45 c0.8,0,1.5,0.7,1.5,1.5V27.5z" />
+                {' '}
+                {' '}
+                {' '}
+              </g>
+              {' '}
+              {' '}
             </g>
           </svg>
         ) : (
