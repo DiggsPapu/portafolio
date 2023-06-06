@@ -28,7 +28,13 @@
     transition: width 0.8s;
     filter: brightness(0.5);
 }
-.imageBox .image a img { width: 100%; height: 100%;}
+.imageBox .image a img { 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    image-rendering: auto;
+    border-radius: 50px;
+}
 .imageBox .image:hover {
     width:80%;
     cursor: pointer;
@@ -38,14 +44,28 @@
     width: 5%;
     height: 80vh;
     border-radius: 50px;
-    object-fit: cover;
-    image-rendering: auto;
     transition: width 0.8s;
     filter: brightness(0.5);
 }
 .imageBox img:hover{
     cursor: pointer;
     filter: brightness(1);
+}
+.image p {
+    background-color: white;
+    text-align: center;
+    font-family: 'RobotoRegular';
+    color: rgba(100,33,255,255);
+    font-size: 2rem;
+    display: none;
+    transform: translateY(-150px);
+    z-index: 50;
+}
+.image:hover p{
+    cursor: pointer;
+    filter: brightness(1);
+    display: block;
+    white-space: nowrap;
 }
 @media only screen and (max-width: 1023px) {
     .mainPage {

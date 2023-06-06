@@ -154,7 +154,7 @@
         transition: 0.5s
     }
     .container:hover{
-        filter: brightness(1.5)
+        filter: brightness(1.5);
     }
     .container p {
         font-family: 'BillionDreams';
