@@ -1,16 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import style from './colorChangeDiv.module.css'
 
 export default function ColorChangeDiv({
-  title = 'Thing', text = 'Text', color,
+  title = 'Thing', text = 'Text', backgroundColor, fontColor, fontFamily,
 }) {
   return (
-    <div style={{
-      backgroundColor: color,
-    }}
+    <div
+      className={style.colorChangeDiv}
+      style={{
+        backgroundColor,
+      }}
     >
-      <h3 style={{ color: 'black' }}>{title}</h3>
-      <h4 style={{ color: 'black' }}>{text}</h4>
+      <h3 style={{ color: fontColor, fontFamily }}>{title}</h3>
+      <h4 style={{ color: fontColor, fontFamily }}>{text}</h4>
     </div>
   )
 }
@@ -18,8 +21,12 @@ export default function ColorChangeDiv({
 ColorChangeDiv.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  color: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  fontColor: PropTypes.string,
+  fontFamily: PropTypes.string,
 }
 ColorChangeDiv.defaultProps = {
-  color: 'grey',
+  backgroundColor: 'grey',
+  fontColor: 'black',
+  fontFamily: 'Times New Roman',
 }

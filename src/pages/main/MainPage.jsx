@@ -49,7 +49,7 @@ export default function MainPage() {
             marginBottom: '10%',
           }}
           >
-            <ColorChangeDiv title="+60 Repos" text="In Github" color="grey" />
+            <ColorChangeDiv title="+60 Repos" text="In Github" color="grey" fontFamily="RobotoRegular" />
             <div style={{
               backgroundColor: 'grey', padding: '1%', borderRadius: '10px', height: '100%',
             }}
