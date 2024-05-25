@@ -2,6 +2,9 @@
     display: flex;
     align-items: stretch; /* Asegura que los elementos hijos se estiren para tener la misma altura */
 }
+a {
+    text-decoration: none;
+  }
 .about {
     width: 100%;
     display: flex;

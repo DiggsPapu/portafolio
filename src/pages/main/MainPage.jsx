@@ -43,9 +43,13 @@ export default function MainPage() {
             marginTop: '10%',
           }}
           >
-            <ColorChangeDiv title="+60 Repos" text="In Github" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+            <a href="https://github.com/DiggsPapu">
+              <ColorChangeDiv title="+60 Repos" text="In Github" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+            </a>
             <ColorChangeDiv title="+1 years" text="Of experience" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
-            <ColorChangeDiv title="+160 contacts" text="On LinkedIn" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+            <a href="https://www.linkedin.com/in/diegoalonzomedinilladiggspapu/">
+              <ColorChangeDiv title="+160 contacts" text="On LinkedIn" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+            </a>
           </div>
           <div style={{ marginBottom: '60%' }}>
             <CardOuter
@@ -59,8 +63,26 @@ export default function MainPage() {
           </div>
         </div>
       </div>
-      {/* Technologies Handled Section */}
       <div />
+      {/* Technologies Handled Section */}
+      <div>
+        <div>
+          <h2>Programming Languages</h2>
+        </div>
+        <div>
+          <h2>Frontend Development</h2>
+        </div>
+        <div>
+          <h2>Backend Development</h2>
+        </div>
+        <div>
+          <h2>Database</h2>
+        </div>
+        <div>
+          <h2>OS</h2>
+        </div>
+
+      </div>
       {/* Projects Section */}
       <div>
         <h2>Projects</h2>
