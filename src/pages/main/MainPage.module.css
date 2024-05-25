@@ -7,20 +7,21 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     background-color: rgb(255, 255, 200);
     height: auto; /* Ajusta automáticamente la altura según el contenido */
+    padding: 3%;
 }
 .presentation{
     top: 0;
     left: 0;
-    /* position: absolute; */
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 10%;
 }
 .profilePicture{
     height: auto; /* Asegura que la imagen mantenga su proporción */

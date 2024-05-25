@@ -40,14 +40,14 @@ export default function MainPage() {
             alignItems: 'center',
             flexDirection: 'row',
             justifyContent: 'space-evenly',
-            marginTop: '0%',
+            marginTop: '10%',
           }}
           >
             <ColorChangeDiv title="+60 Repos" text="In Github" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
             <ColorChangeDiv title="+1 years" text="Of experience" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
             <ColorChangeDiv title="+160 contacts" text="On LinkedIn" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
           </div>
-          <div style={{ marginBottom: '50%' }}>
+          <div style={{ marginBottom: '60%' }}>
             <CardOuter
               color="black"
               backgroundColorTitle="rgb(255, 255, 200)"
@@ -58,43 +58,6 @@ export default function MainPage() {
             />
           </div>
         </div>
-        {/* <div
-          style={{
-            width: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            backgroundColor: 'rgb(255, 255, 200)',
-            height: '100%',
-          }}
-        >
-          <div style={{
-            width: '100%',
-            height: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'row',
-            justifyContent: 'space-evenly',
-            marginTop: '20%',
-            padding: '5%',
-          }}
-          >
-            <ColorChangeDiv title="+60 Repos" text="In Github" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
-            <ColorChangeDiv title="+1 years" text="Of experience" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
-            <ColorChangeDiv title="+160 contacts" text="On LinkedIn" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
-          </div>
-          <div style={{ marginBottom: '50%' }}>
-            <CardOuter
-              color="black"
-              backgroundColorTitle="rgb(255, 255, 200)"
-              color1="white"
-              backgroundColorInfo="rgb(15, 19, 24)"
-              title="About"
-              information={information}
-            />
-          </div>
-        </div> */}
       </div>
       {/* Technologies Handled Section */}
       <div />

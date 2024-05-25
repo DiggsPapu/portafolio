@@ -3,7 +3,7 @@
   }
   
   .container {
-    width: 100%;
+    width: 30%;
     height:auto;
     position: relative;
     display: flex;
@@ -84,10 +84,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
     box-sizing: border-box;
     font-family: 'RobotoRegular';
-    padding: 10%;
+    padding: 5%;
   }
   .container .card .face.face2 {
     transform: translateY(-50%);
