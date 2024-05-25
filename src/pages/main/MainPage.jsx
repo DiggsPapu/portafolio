@@ -21,10 +21,9 @@ export default function MainPage() {
   return (
     <div className={styles.mainPage}>
       <div className={styles.presentation}>
-        <h1 style={{ fontFamily: 'BillionDreams', color: 'rgb(255, 185, 11, 1)', fontSize: '50vh' }}>DiggsPapu</h1>
-        <h4 style={{ fontSize: '5vh' }}>Software Engineer| AI Learner | Night Photographer</h4>
+        <h1 style={{ fontFamily: 'BillionDreams', color: 'rgb(255, 185, 11, 1)' }}>DiggsPapu</h1>
+        <h4 style={{ fontSize: '3vw' }}>Software Engineer| AI Learner | Night Photographer</h4>
       </div>
-      {/* About section */}
       <div className={styles.aboutSection}>
         {/* Profile picture section */}
         <img
@@ -64,60 +63,100 @@ export default function MainPage() {
         </div>
       </div>
       <div />
-      {/* Technologies Handled Section */}
-      <div>
-        <div>
-          <h2>Programming Languages</h2>
-        </div>
-        <div>
-          <h2>Frontend Development</h2>
-        </div>
-        <div>
-          <h2>Backend Development</h2>
-        </div>
-        <div>
-          <h2>Database</h2>
-        </div>
-        <div>
-          <h2>OS</h2>
-        </div>
-
-      </div>
-      {/* Projects Section */}
-      <div>
-        <h2>Projects</h2>
-        <h3>Web-kind project</h3>
-      </div>
-      <div className={styles.imageBox}>
-        <div className={styles.image}>
-          <a href="https://diggspapu.github.io/lab6-web/"><img src={Lab6} alt="Labs" /></a>
-        </div>
-        <div className={styles.image}>
-          <a href="https://diggspapu.github.io/lab7-web/"><img src={Lab7} alt="Labs" /></a>
-        </div>
-        <div className={styles.image}>
-          <a href="https://diggspapu.github.io/lab8-web/"><img src={Lab8} alt="Labs" /></a>
-        </div>
-        <div className={styles.image}>
-          <a href="https://diggspapu.github.io/project1-web"><img src={Project1} alt="Labs" /></a>
-        </div>
-      </div>
-      <h3>Full-Stack Projects</h3>
-      <div className={styles.imageBox}>
-        <div className={styles.image}>
-          <a href="https://diggspapu.github.io/project2-web/web-project2"><img src={Project2} alt="Labs" /></a>
-          {/* <p>Project: learning angular</p> */}
-        </div>
-        <div className={styles.image}>
-          <a href="https://diggspapu.github.io/Kera3/kera3"><img src={Kera3} alt="Project" /></a>
-          {/* <p>Project: Kera3</p> */}
-        </div>
-        <div className={styles.image}>
-          <a href="https://diggspapu.github.io/FrontendCompis/"><img src={LexYac} alt="Project" /></a>
-          {/* <p>Project: Lex-Yacc</p> */}
-        </div>
-      </div>
-
     </div>
   )
 }
+
+// About section
+//       <div className={styles.aboutSection}>
+//         {/* Profile picture section */}
+//         <img
+//           src={profilePicture}
+//           alt="PP"
+//           className={styles.profilePicture}
+//         />
+//         <div className={styles.about}>
+//           <div style={{
+//             width: '100%',
+//             height: 'auto',
+//             display: 'flex',
+//             alignItems: 'center',
+//             flexDirection: 'row',
+//             justifyContent: 'space-evenly',
+//             marginTop: '10%',
+//           }}
+//           >
+//             <a href="https://github.com/DiggsPapu">
+//               <ColorChangeDiv title="+60 Repos" text="In Github" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+//             </a>
+//             <ColorChangeDiv title="+1 years" text="Of experience" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+//             <a href="https://www.linkedin.com/in/diegoalonzomedinilladiggspapu/">
+//               <ColorChangeDiv title="+160 contacts" text="On LinkedIn" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+//             </a>
+//           </div>
+//           <div style={{ marginBottom: '60%' }}>
+//             <CardOuter
+//               color="black"
+//               backgroundColorTitle="rgb(255, 255, 200)"
+//               color1="white"
+//               backgroundColorInfo="rgb(15, 19, 24)"
+//               title="About"
+//               information={information}
+//             />
+//           </div>
+//         </div>
+//       </div>
+//       <div />
+//       {/* Technologies Handled Section */}
+//       <div>
+//         <div>
+//           <h2>Programming Languages</h2>
+//         </div>
+//         <div>
+//           <h2>Frontend Development</h2>
+//         </div>
+//         <div>
+//           <h2>Backend Development</h2>
+//         </div>
+//         <div>
+//           <h2>Database</h2>
+//         </div>
+//         <div>
+//           <h2>OS</h2>
+//         </div>
+
+//       </div>
+//       {/* Projects Section */}
+//       <div>
+//         <h2>Projects</h2>
+//         <h3>Web-kind project</h3>
+//       </div>
+//       <div className={styles.imageBox}>
+//         <div className={styles.image}>
+//           <a href="https://diggspapu.github.io/lab6-web/"><img src={Lab6} alt="Labs" /></a>
+//         </div>
+//         <div className={styles.image}>
+//           <a href="https://diggspapu.github.io/lab7-web/"><img src={Lab7} alt="Labs" /></a>
+//         </div>
+//         <div className={styles.image}>
+//           <a href="https://diggspapu.github.io/lab8-web/"><img src={Lab8} alt="Labs" /></a>
+//         </div>
+//         <div className={styles.image}>
+//           <a href="https://diggspapu.github.io/project1-web"><img src={Project1} alt="Labs" /></a>
+//         </div>
+//       </div>
+//       <h3>Full-Stack Projects</h3>
+//       <div className={styles.imageBox}>
+//         <div className={styles.image}>
+//           <a href="https://diggspapu.github.io/project2-web/web-project2"><img src={Project2} alt="Labs" /></a>
+//           {/* <p>Project: learning angular</p> */}
+//         </div>
+//         <div className={styles.image}>
+//           <a href="https://diggspapu.github.io/Kera3/kera3"><img src={Kera3} alt="Project" /></a>
+//           {/* <p>Project: Kera3</p> */}
+//         </div>
+//         <div className={styles.image}>
+//           <a href="https://diggspapu.github.io/FrontendCompis/"><img src={LexYac} alt="Project" /></a>
+//           {/* <p>Project: Lex-Yacc</p> */}
+//         </div>
+//       </div>
