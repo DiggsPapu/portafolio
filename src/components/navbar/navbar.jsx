@@ -13,15 +13,15 @@ export default function NavBar() {
   const body = 'I wanted to contact you for...'
   return (
     <nav className={styles.navbar}>
-      <Link to="/20172/portafolio/" style={{ textDecoration: 'none' }}>
+      <Link to="/portafolio" style={{ textDecoration: 'none' }}>
         <Logo />
       </Link>
       <div className={styles.dropdown}>
-        <DropdownButton title="Contact Me" options={[['https://www.linkedin.com/in/diego-andres-alonzo-medinilla-b64b8920a/', Linkedin], ['https://github.com/DiggsPapu', github], [`mailto:diego.alonzom@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, mail]]} color="white" backgroundColor="rgba(100,33,255,255)" />
+        <DropdownButton title="Contact Me" options={[['https://www.linkedin.com/in/diegoalonzomedinilladiggspapu', Linkedin], ['https://github.com/DiggsPapu', github], [`mailto:diego.alonzom@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, mail]]} color="white" backgroundColor="rgba(100,33,255,255)" />
       </div>
       <div className={styles.login}>
 
-        <Link to="/20172/portafolio/AboutMe" style={{ textDecoration: 'none' }}>
+        <Link to="/portafolio/AboutMe" style={{ textDecoration: 'none' }}>
           <LoginButton text="About Me" />
         </Link>
       </div>
