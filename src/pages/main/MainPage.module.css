@@ -1,19 +1,38 @@
 .aboutSection {
+    display: flex;
+    align-items: stretch; /* Asegura que los elementos hijos se estiren para tener la misma altura */
+}
+.about {
     width: 100%;
-    height: auto;
-    background-color: rgb(255, 255, 200);
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    background-color: rgb(255, 255, 200);
+    height: auto; /* Ajusta automáticamente la altura según el contenido */
+}
+.presentation{
+    top: 0;
+    left: 0;
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.profilePicture{
+    height: auto; /* Asegura que la imagen mantenga su proporción */
+    max-height: 100%; /* Opcional: asegura que la imagen no crezca más allá del contenedor */
+    width: 50%;
 }
 .mainPage {
     margin-top: 5vh;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
 }
 .mainPage h1 {
     width: 100%;

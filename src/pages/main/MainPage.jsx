@@ -20,63 +20,34 @@ export default function MainPage() {
   `
   return (
     <div className={styles.mainPage}>
-      <h1 style={{ fontFamily: 'BillionDreams', color: 'rgb(255, 185, 11, 1)', fontSize: '20rem' }}>DiggsPapu</h1>
-      <h4>Software Engineer| AI Learner | Night Photographer</h4>
-      {/* about section */}
+      <div className={styles.presentation}>
+        <h1 style={{ fontFamily: 'BillionDreams', color: 'rgb(255, 185, 11, 1)', fontSize: '50vh' }}>DiggsPapu</h1>
+        <h4 style={{ fontSize: '5vh' }}>Software Engineer| AI Learner | Night Photographer</h4>
+      </div>
+      {/* About section */}
       <div className={styles.aboutSection}>
         {/* Profile picture section */}
-        <div style={{ margin: '0.2%', width: '90%', height: 'auto' }}>
-          <img src={profilePicture} alt="PP" width="85%" height="auto" style={{ boxShadow: '10% 10% 10% grey' }} />
-        </div>
-        <div
-          style={{
-            width: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            height: '100%',
-            marginRight: '10%',
-          }}
-        >
+        <img
+          src={profilePicture}
+          alt="PP"
+          className={styles.profilePicture}
+        />
+        <div className={styles.about}>
           <div style={{
             width: '100%',
+            height: 'auto',
             display: 'flex',
             alignItems: 'center',
             flexDirection: 'row',
-            justifyContent: 'space-between',
-            marginTop: '-10%',
-            marginBottom: '10%',
+            justifyContent: 'space-evenly',
+            marginTop: '0%',
           }}
           >
-            <ColorChangeDiv title="+60 Repos" text="In Github" color="grey" fontFamily="RobotoRegular" />
-            <div style={{
-              backgroundColor: 'grey', padding: '1%', borderRadius: '10px', height: '100%',
-            }}
-            >
-              <h3 style={{ color: 'black' }}>+1 years</h3>
-              <h4 style={{ color: 'black' }}>Of experience</h4>
-            </div>
-            <div style={{
-              backgroundColor: 'grey', padding: '1%', borderRadius: '10px', height: '100%',
-            }}
-            >
-              <h3 style={{ color: 'black' }}>+60 repos</h3>
-              <h4 style={{ color: 'black' }}>In Github</h4>
-            </div>
-            <div style={{
-              backgroundColor: 'grey',
-              padding: '1%',
-              borderRadius: '10px',
-              height: '100%',
-            }}
-            >
-              <h3 style={{ color: 'black' }}>+160 contacts</h3>
-              <h4 style={{ color: 'black' }}>In Linkedin</h4>
-            </div>
+            <ColorChangeDiv title="+60 Repos" text="In Github" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+            <ColorChangeDiv title="+1 years" text="Of experience" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+            <ColorChangeDiv title="+160 contacts" text="On LinkedIn" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
           </div>
-          {/* About me section */}
-          <div style={{ marginBottom: '100%' }}>
+          <div style={{ marginBottom: '50%' }}>
             <CardOuter
               color="black"
               backgroundColorTitle="rgb(255, 255, 200)"
@@ -87,9 +58,51 @@ export default function MainPage() {
             />
           </div>
         </div>
+        {/* <div
+          style={{
+            width: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            backgroundColor: 'rgb(255, 255, 200)',
+            height: '100%',
+          }}
+        >
+          <div style={{
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'row',
+            justifyContent: 'space-evenly',
+            marginTop: '20%',
+            padding: '5%',
+          }}
+          >
+            <ColorChangeDiv title="+60 Repos" text="In Github" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+            <ColorChangeDiv title="+1 years" text="Of experience" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+            <ColorChangeDiv title="+160 contacts" text="On LinkedIn" backgroundColor="rgb(255, 255, 200)" fontFamily="RobotoRegular" />
+          </div>
+          <div style={{ marginBottom: '50%' }}>
+            <CardOuter
+              color="black"
+              backgroundColorTitle="rgb(255, 255, 200)"
+              color1="white"
+              backgroundColorInfo="rgb(15, 19, 24)"
+              title="About"
+              information={information}
+            />
+          </div>
+        </div> */}
       </div>
-      <h2>My projects</h2>
-      <h3>Web-kind project</h3>
+      {/* Technologies Handled Section */}
+      <div />
+      {/* Projects Section */}
+      <div>
+        <h2>Projects</h2>
+        <h3>Web-kind project</h3>
+      </div>
       <div className={styles.imageBox}>
         <div className={styles.image}>
           <a href="https://diggspapu.github.io/lab6-web/"><img src={Lab6} alt="Labs" /></a>

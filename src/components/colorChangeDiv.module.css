@@ -9,12 +9,12 @@
     cursor: pointer;
 }
 .colorChangeDiv h3 {
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 .colorChangeDiv h4 {
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 /* Hover effect with brightness change */
 .colorChangeDiv:hover {
-    filter: brightness(1.5); /* Use filter for better compatibility */
+    filter: brightness(0.5); /* Use filter for better compatibility */
 }
