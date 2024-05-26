@@ -129,7 +129,17 @@ a {
     display: block;
     white-space: nowrap;
 }
+.cardOuterD {
+    margin-bottom: 60%;
+}
 @media only screen and (max-width: 1023px) {
+    .cardOuterD {
+        margin-bottom: -10%;
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+    }
     .aboutSection{
         display: flex;
         align-items: center;
@@ -138,6 +148,17 @@ a {
     .profilePicture{
         height: auto; /* Asegura que la imagen mantenga su proporción */
         width: 100vw;
+    }
+    
+    .about {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 200);
+        height: auto; /* Ajusta automáticamente la altura según el contenido */
+        padding: 3%;
     }
     .mainPage {
         margin-top: 5vh;
