@@ -34,6 +34,7 @@ import databricks from '../../assets/databricks.png'
 import linux from '../../assets/linux.png'
 import virtualbox from '../../assets/virtualbox.png'
 import docker from '../../assets/docker.png'
+import Table from '../../components/Table'
 
 export default function MainPage() {
   const information = `
@@ -42,6 +43,48 @@ export default function MainPage() {
   handling. I am currently as an Appentice of Mcdonald's Mesoamerica and giving support on saturdays in All Data, also
   learning Databricks, Machine Learning and AI.
   `
+  const programmingLanguages = [
+    {
+      link: 'https://en.wikipedia.org/wiki/C_(programming_language)',
+      src: CL,
+      alt: 'C language',
+    },
+    {
+      link: 'https://cplusplus.com/',
+      src: CPP,
+      alt: 'CPP language',
+    },
+    {
+      link: 'https://dart.dev/',
+      src: Dart,
+      alt: 'Dart language',
+    },
+    {
+      link: 'https://www.java.com/en/',
+      src: Java,
+      alt: 'Java language',
+    },
+    {
+      link: 'https://www.javascript.com/',
+      src: JS,
+      alt: 'JS language',
+    },
+    {
+      link: 'https://www.python.org/',
+      src: Python,
+      alt: 'Python language',
+    },
+    {
+      link: 'https://www.r-project.org/',
+      src: RL,
+      alt: 'R language',
+    },
+    {
+      link: 'https://www.oracle.com/database/technologies/appdev/plsql.html',
+      src: plsql,
+      alt: 'PLSQL language',
+    },
+  ]
   return (
     <div className={styles.mainPage}>
       <div className={styles.presentation}>
@@ -86,57 +129,15 @@ export default function MainPage() {
           </div>
         </div>
       </div>
-      {/* Technologies */}
-      <div>
-      <h2>Technologies</h2>
-        <div>
+      <div className={styles.techSection}>
+        <div className={styles.techDiv}>
+          <h2>Technologies</h2>
+        </div>
+        <div className={styles.techDiv}>
           <h4>Programming Languages</h4>
-          <div style={{
-            width: '100%',
-            height: 'auto',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'row',
-            justifyContent: 'space-evenly',
-            marginTop: '10%',
-          }}
-          >
-            <a href="https://en.wikipedia.org/wiki/C_(programming_language)">
-              <img src={CL} alt="C language" />
-            </a>
-            <a href="https://cplusplus.com/">
-              <img src={CPP} alt="CPP language" />
-            </a>
-            <a href="https://dart.dev/">
-              <img src={Dart} alt="Dart language" />
-            </a>
-            <a href="https://www.java.com/en/">
-              <img src={Java} alt="Java language" />
-            </a>
-            <a href="https://www.javascript.com/">
-              <img src={JS} alt="JS language" />
-            </a>
-            <a href="https://www.python.org/">
-              <img src={Python} alt="Python language" />
-            </a>
-            <a href="https://www.r-project.org/">
-              <img src={RL} alt="R language" />
-            </a>
-            <a href="https://www.oracle.com/database/technologies/appdev/plsql.html">
-              <img src={plsql} alt="PLSQL language" />
-            </a>
-          </div>
+          <Table tableItems={programmingLanguages} />
           <h4>FullStack Development</h4>
-          <div style={{
-            width: '100%',
-            height: 'auto',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'row',
-            justifyContent: 'space-evenly',
-            marginTop: '10%',
-          }}
-          >
+          <div>
             <a href="https://html.com/">
               <img src={html} alt="html language" />
             </a>
@@ -160,16 +161,7 @@ export default function MainPage() {
             </a>
           </div>
           <h4>Database</h4>
-          <div style={{
-            width: '100%',
-            height: 'auto',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'row',
-            justifyContent: 'space-evenly',
-            marginTop: '10%',
-          }}
-          >
+          <div>
             <a href="https://html.com/">
               <img src={oracle} alt="Oracle DB" />
             </a>
@@ -184,16 +176,7 @@ export default function MainPage() {
             </a>
           </div>
           <h4>Business Intelligence</h4>
-          <div style={{
-            width: '100%',
-            height: 'auto',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'row',
-            justifyContent: 'space-evenly',
-            marginTop: '10%',
-          }}
-          >
+          <div>
             <a href="https://jupyter.org/">
               <img src={jupyter} alt="Jupyter Notebooks" />
             </a>
@@ -202,16 +185,7 @@ export default function MainPage() {
             </a>
           </div>
           <h4>Environments & Version Handling</h4>
-          <div style={{
-            width: '100%',
-            height: 'auto',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'row',
-            justifyContent: 'space-evenly',
-            marginTop: '10%',
-          }}
-          >
+          <div>
             <a href="https://jupyter.org/">
               <img src={docker} alt="Docker" />
             </a>

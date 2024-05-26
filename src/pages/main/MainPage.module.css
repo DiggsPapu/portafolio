@@ -132,6 +132,54 @@ a {
 .cardOuterD {
     margin-bottom: 60%;
 }
+.techSection {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+.techDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(24, 41, 67);
+    height: auto; /* Ajusta automáticamente la altura según el contenido */
+    padding: 3%;
+}
+.tableContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns, each taking an equal fraction of the available space */
+    gap: 1vw; /* Adjust the gap between items as needed */
+}
+.tableContainer img{
+    padding: 1vw;
+}
+.tableItem {
+    border: 1px solid rgb(26, 43, 69);
+    padding: 5%; /* Example padding for items */
+    text-align: center; /* Center the text inside each item */
+}
+
+/* Center the remaining items in the last row if they don't fill all 4 columns */
+.tableContainer::after {
+    content: '';
+    grid-column: span 4; /* Ensures the centering block spans all columns */
+    display: flex;
+    justify-content: center;
+}
+.tableContainer .tableItem:hover {
+    border: 1px solid #ccc;
+}
+
+.tableontainer .tableItem:nth-last-child(-n+4):nth-child(4n+1)::after {
+    content: '';
+    grid-column: span 4; /* Center the last items row */
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 1023px) {
     .cardOuterD {
         margin-bottom: -10%;
@@ -148,6 +196,12 @@ a {
     .profilePicture{
         height: auto; /* Asegura que la imagen mantenga su proporción */
         width: 100vw;
+    }
+    .techSection {
+        background-color: rgb(24, 41, 67);
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
     
     .about {
@@ -173,23 +227,24 @@ a {
         text-align: center;
         font-family: 'RobotoRegular';
         color: white;
-        font-size: 4rem;
+        font-size: 10vw;
         margin-bottom: 10px;
     }
     .imageBox {
+        max-height: 100%;
         width: 100%;
         height: 80vh;
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        gap: 5px;
+        gap: 1%;
     } 
     .imageBox .image {
         width: 100%;
         height: 20%;
         border-radius: 50px;
-        transition: height 1.0s;
+        transition: height 0.8s;
         filter: brightness(0.5);
     }
     .imageBox .image a img { width: 100%; height: 100%;}

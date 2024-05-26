@@ -9,12 +9,12 @@ function App() {
   return (
 
     <>
-      {/* <header style={{
+      <header style={{
         width: '100%', height: 'fit-content', position: 'fixed', top: '0', left: '0', zIndex: '100',
       }}
       >
         <NavBar />
-      </header> */}
+      </header>
       <Routes>
         <Route
           path="/portafolio/"
