@@ -43,48 +43,17 @@ export default function MainPage() {
   handling. I am currently as an Appentice of Mcdonald's Mesoamerica and giving support on saturdays in All Data, also
   learning Databricks, Machine Learning and AI.
   `
-  const programmingLanguages = [
-    {
-      link: 'https://en.wikipedia.org/wiki/C_(programming_language)',
-      src: CL,
-      alt: 'C language',
-    },
-    {
-      link: 'https://cplusplus.com/',
-      src: CPP,
-      alt: 'CPP language',
-    },
-    {
-      link: 'https://dart.dev/',
-      src: Dart,
-      alt: 'Dart language',
-    },
-    {
-      link: 'https://www.java.com/en/',
-      src: Java,
-      alt: 'Java language',
-    },
-    {
-      link: 'https://www.javascript.com/',
-      src: JS,
-      alt: 'JS language',
-    },
-    {
-      link: 'https://www.python.org/',
-      src: Python,
-      alt: 'Python language',
-    },
-    {
-      link: 'https://www.r-project.org/',
-      src: RL,
-      alt: 'R language',
-    },
-    {
-      link: 'https://www.oracle.com/database/technologies/appdev/plsql.html',
-      src: plsql,
-      alt: 'PLSQL language',
-    },
+  const programmingLanguages = [{ link: 'https://en.wikipedia.org/wiki/C_(programming_language)', src: CL, alt: 'C language' }, { link: 'https://cplusplus.com/', src: CPP, alt: 'CPP language' }, { link: 'https://dart.dev/', src: Dart, alt: 'Dart language' }, { link: 'https://www.java.com/en/', src: Java, alt: 'Java language' }, { link: 'https://www.javascript.com/', src: JS, alt: 'JS language' }, { link: 'https://www.python.org/', src: Python, alt: 'Python language' }, { link: 'https://www.r-project.org/', src: RL, alt: 'R language' }, { link: 'https://www.oracle.com/database/technologies/appdev/plsql.html', src: plsql, alt: 'PLSQL language' },
   ]
+  const fullStackTools = [{ link: 'https://html.com/', src: html, alt: 'html language' }, { link: 'https://css-tricks.com/', src: Css, alt: 'css language' }, { link: 'https://react.dev/', src: react, alt: 'React Framework' }, { link: 'https://angular.dev/', src: angular, alt: 'Angular Framework' }, { link: 'https://nodejs.org/en', src: node, alt: 'Node Environment' }, { link: 'https://www.postman.com/', src: postman, alt: 'Postman API Handling' }, { link: 'https://flutter.dev/', src: flutter, alt: 'Flutter Framework' },
+  ]
+  const dataBases = [{ link: 'https://html.com/', src: oracle, alt: 'Oracle DB' }, { link: 'https://css-tricks.com/', src: postgres, alt: 'postgres DB' }, { link: 'https://react.dev/', src: mongo, alt: 'mongodb' }, { link: 'https://angular.dev/', src: neo4j, alt: 'Neo4j' },
+  ]
+  const BI = [{ link: 'https://jupyter.org/', src: jupyter, alt: 'Jupyter Notebooks' }, { link: 'https://databricks.com', src: databricks, alt: 'Databricks Platform' },
+  ]
+  const environments = [{ link: 'https://jupyter.org/', src: docker, alt: 'Docker' }, { link: 'https://databricks.com', src: virtualbox, alt: 'VirtualBox' }, { link: 'https://css-tricks.com/', src: linux, alt: 'Linux OS' },
+  ]
+  const quote = 'The technology you use impresses no one. The experience you create with it is everything'
   return (
     <div className={styles.mainPage}>
       <div className={styles.presentation}>
@@ -131,71 +100,29 @@ export default function MainPage() {
       </div>
       <div className={styles.techSection}>
         <div className={styles.techDiv}>
-          <h2>Technologies</h2>
+          <h2 style={{ width: '100%', height: '100%', alignContent: 'center' }}>Technologies</h2>
+          <em>
+            <h3 style={{
+              fontFamily: 'RobotoRegular', width: '100%', height: '100%', alignContent: 'center', marginBottom: '100%',
+            }}
+            >
+              &quot;
+              {quote}
+              &quot;
+            </h3>
+          </em>
         </div>
         <div className={styles.techDiv}>
-          <h4>Programming Languages</h4>
+          <h4 style={{ fontSize: '2vw' }}>Programming Languages</h4>
           <Table tableItems={programmingLanguages} />
-          <h4>FullStack Development</h4>
-          <div>
-            <a href="https://html.com/">
-              <img src={html} alt="html language" />
-            </a>
-            <a href="https://css-tricks.com/">
-              <img src={Css} alt="CSS language" />
-            </a>
-            <a href="https://react.dev/">
-              <img src={react} alt="React Framework" />
-            </a>
-            <a href="https://angular.dev/">
-              <img src={angular} alt="Angular Framework" />
-            </a>
-            <a href="https://nodejs.org/en">
-              <img src={node} alt="Node Environment" />
-            </a>
-            <a href="https://www.postman.com/">
-              <img src={postman} alt="Postman API Handling" />
-            </a>
-            <a href="https://flutter.dev/">
-              <img src={flutter} alt="Flutter Framework" />
-            </a>
-          </div>
-          <h4>Database</h4>
-          <div>
-            <a href="https://html.com/">
-              <img src={oracle} alt="Oracle DB" />
-            </a>
-            <a href="https://css-tricks.com/">
-              <img src={postgres} alt="postgres DB" />
-            </a>
-            <a href="https://react.dev/">
-              <img src={mongo} alt="mongodb" />
-            </a>
-            <a href="https://angular.dev/">
-              <img src={neo4j} alt="Neo4j" />
-            </a>
-          </div>
-          <h4>Business Intelligence</h4>
-          <div>
-            <a href="https://jupyter.org/">
-              <img src={jupyter} alt="Jupyter Notebooks" />
-            </a>
-            <a href="https://databricks.com">
-              <img src={databricks} alt="Databricks Platform" />
-            </a>
-          </div>
-          <h4>Environments & Version Handling</h4>
-          <div>
-            <a href="https://jupyter.org/">
-              <img src={docker} alt="Docker" />
-            </a>
-            <a href="https://databricks.com">
-              <img src={virtualbox} alt="VirtualBox" />
-            </a>
-            <a href="https://css-tricks.com/">
-              <img src={linux} alt="Linux OS" />
-            </a>
-          </div>
+          <h4 style={{ fontSize: '2vw' }}>FullStack Development</h4>
+          <Table tableItems={fullStackTools} />
+          <h4 style={{ fontSize: '2vw' }}>Database</h4>
+          <Table tableItems={dataBases} />
+          <h4 style={{ fontSize: '2vw' }}>Business Intelligence</h4>
+          <Table tableItems={BI} />
+          <h4 style={{ fontSize: '2vw' }}>Environments & Version Handling</h4>
+          <Table tableItems={environments} />
         </div>
       </div>
       {/* Projects Section */}

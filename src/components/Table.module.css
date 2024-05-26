@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4, 1fr); /* 4 columns, each taking an equal fraction of the available space */
     gap: 1vw; /* Adjust the gap between items as needed */
 }
-.tableContainer img{
+.tableContainer img {
     padding: 1vw;
 }
 .tableItem {
@@ -19,13 +19,14 @@
     display: flex;
     justify-content: center;
 }
+
+/* Adjust hover effect */
 .tableContainer .tableItem:hover {
     border: 1px solid #ccc;
 }
 
-.tableontainer .tableItem:nth-last-child(-n+4):nth-child(4n+1)::after {
-    content: '';
-    grid-column: span 4; /* Center the last items row */
+/* Center the last row items if they are fewer than 4 */
+.tableContainer > :nth-last-child(-n+4):nth-child(4n+1) {
     display: flex;
     justify-content: center;
 }

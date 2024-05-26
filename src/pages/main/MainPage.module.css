@@ -148,37 +148,6 @@ a {
     height: auto; /* Ajusta automáticamente la altura según el contenido */
     padding: 3%;
 }
-.tableContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns, each taking an equal fraction of the available space */
-    gap: 1vw; /* Adjust the gap between items as needed */
-}
-.tableContainer img{
-    padding: 1vw;
-}
-.tableItem {
-    border: 1px solid rgb(26, 43, 69);
-    padding: 5%; /* Example padding for items */
-    text-align: center; /* Center the text inside each item */
-}
-
-/* Center the remaining items in the last row if they don't fill all 4 columns */
-.tableContainer::after {
-    content: '';
-    grid-column: span 4; /* Ensures the centering block spans all columns */
-    display: flex;
-    justify-content: center;
-}
-.tableContainer .tableItem:hover {
-    border: 1px solid #ccc;
-}
-
-.tableontainer .tableItem:nth-last-child(-n+4):nth-child(4n+1)::after {
-    content: '';
-    grid-column: span 4; /* Center the last items row */
-    display: flex;
-    justify-content: center;
-}
 
 @media only screen and (max-width: 1023px) {
     .cardOuterD {
