@@ -47,18 +47,18 @@ export default function MainPage() {
   ]
   const fullStackTools = [{ link: 'https://html.com/', src: html, alt: 'html language' }, { link: 'https://css-tricks.com/', src: Css, alt: 'css language' }, { link: 'https://react.dev/', src: react, alt: 'React Framework' }, { link: 'https://angular.dev/', src: angular, alt: 'Angular Framework' }, { link: 'https://nodejs.org/en', src: node, alt: 'Node Environment' }, { link: 'https://www.postman.com/', src: postman, alt: 'Postman API Handling' }, { link: 'https://flutter.dev/', src: flutter, alt: 'Flutter Framework' },
   ]
-  const dataBases = [{ link: 'https://html.com/', src: oracle, alt: 'Oracle DB' }, { link: 'https://css-tricks.com/', src: postgres, alt: 'postgres DB' }, { link: 'https://react.dev/', src: mongo, alt: 'mongodb' }, { link: 'https://angular.dev/', src: neo4j, alt: 'Neo4j' },
+  const dataBases = [{ link: 'https://www.oracle.com/', src: oracle, alt: 'Oracle DB' }, { link: 'https://www.postgresql.org/', src: postgres, alt: 'postgres DB' }, { link: 'https://www.mongodb.com/', src: mongo, alt: 'mongodb' }, { link: 'https://neo4j.com/', src: neo4j, alt: 'Neo4j' },
   ]
   const BI = [{ link: 'https://jupyter.org/', src: jupyter, alt: 'Jupyter Notebooks' }, { link: 'https://databricks.com', src: databricks, alt: 'Databricks Platform' },
   ]
-  const environments = [{ link: 'https://jupyter.org/', src: docker, alt: 'Docker' }, { link: 'https://databricks.com', src: virtualbox, alt: 'VirtualBox' }, { link: 'https://css-tricks.com/', src: linux, alt: 'Linux OS' },
+  const environments = [{ link: 'https://www.docker.com/', src: docker, alt: 'Docker' }, { link: 'https://www.virtualbox.org/', src: virtualbox, alt: 'VirtualBox' }, { link: 'https://www.linux.org/', src: linux, alt: 'Linux OS' },
   ]
   const quote = 'The technology you use impresses no one. The experience you create with it is everything'
   return (
     <div className={styles.mainPage}>
       <div className={styles.presentation}>
         <h1 style={{ fontFamily: 'BillionDreams', color: 'rgb(255, 185, 11, 1)' }}>DiggsPapu</h1>
-        <h4 style={{ fontSize: '3vw' }}>Software Engineer| AI Learner | Night Photographer</h4>
+        <h4 style={{ fontSize: '3vw' }}>Software Engineer | AI Learner | Night Photographer</h4>
       </div>
       <div className={styles.aboutSection}>
         {/* Profile picture section */}

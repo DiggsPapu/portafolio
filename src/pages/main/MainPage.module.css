@@ -1,5 +1,5 @@
 .mainPage {
-    margin-top: 5vh;
+    margin-top: 0vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,9 +33,6 @@ a {
     justify-content: center;
     margin-bottom: 10%;
 }
-.mainPage .presentation h1{
-    font-size: 24vw;
-}
 .profilePicture{
     height: auto; /* Asegura que la imagen mantenga su proporción */
     width: 50vw;
@@ -46,8 +43,9 @@ a {
     text-align: center;
     font-family: 'RobotoRegular';
     color: white;
-    font-size: 8rem;
-    margin-bottom: 10px;
+    font-size: 20vw;
+    margin-bottom: 0%;
+    margin-top: 10%;
 }
 .mainPage h2 {
     width: 100%;
