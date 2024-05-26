@@ -131,7 +131,7 @@ export default function MainPage() {
         </div>
       </div>
       {/* Projects Section */}
-      <div>
+      <div style={{ justifyContent: 'center', justifyItems: 'center' }}>
         <h2>Selected Projects</h2>
         <h3>Web-kind project</h3>
       </div>
@@ -163,6 +163,17 @@ export default function MainPage() {
           <a href="https://diggspapu.github.io/FrontendCompis/"><img src={LexYac} alt="Project" /></a>
           {/* <p>Project: Lex-Yacc</p> */}
         </div>
+      </div>
+      <div>
+        <p style={{
+          color: 'white', fontFamily: 'RobotoRegular', justifySelf: 'center', textJustify: 'center', fontSize: '0.5vw',
+        }}
+        >
+          Not all my projects are here there
+          are various that cannot be shown because they are SQL, Data Mining, OS, etc.
+          <br />
+          ©2024 by Diego Andrés Alonzo Medinilla
+        </p>
       </div>
     </div>
   )
