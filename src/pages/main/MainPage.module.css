@@ -143,10 +143,9 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(24, 41, 67);
     height: auto; /* Ajusta automáticamente la altura según el contenido */
-    padding: 3%;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -185,8 +184,7 @@ a {
     }
     .mainPage {
         margin-top: 5vh;
-        width: 90%;
-        padding: 5%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;

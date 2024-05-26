@@ -100,10 +100,15 @@ export default function MainPage() {
       </div>
       <div className={styles.techSection}>
         <div className={styles.techDiv}>
-          <h2 style={{ width: '100%', height: '100%', alignContent: 'center' }}>Technologies</h2>
+          <h2 style={{
+            width: '100%', height: 'auto', alignContent: 'center', fontSize: '5vw',
+          }}
+          >
+            Technologies
+          </h2>
           <em>
             <h3 style={{
-              fontFamily: 'RobotoRegular', width: '100%', height: '100%', alignContent: 'center', marginBottom: '100%',
+              fontFamily: 'RobotoRegular', height: 'auto', alignContent: 'center', fontSize: '2vw',
             }}
             >
               &quot;
