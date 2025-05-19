@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import {
@@ -9,7 +9,7 @@ export default function NavBar() {
   const location = useLocation()
   const subject = 'Hi Diego'
   const body = 'I wanted to contact you for...'
-
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const contactOptions = [
     {
       name: 'LinkedIn',
@@ -76,7 +76,7 @@ export default function NavBar() {
 
             {/* Contact Dropdown */}
             <div className="relative group ml-2">
-              <button className="flex items-center px-4 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-all shadow-md">
+              <button type="button" className="flex items-center px-4 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-all shadow-md">
                 Contact Me
                 <FiExternalLink className="ml-2 w-4 h-4" />
               </button>
@@ -99,7 +99,7 @@ export default function NavBar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-dark-700">
+          <button type="button" className="md:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-dark-700" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -108,7 +108,7 @@ export default function NavBar() {
       </div>
 
       {/* Mobile Menu (hidden by default) */}
-      <div className="md:hidden bg-white dark:bg-dark-800 border-t border-gray-200 dark:border-dark-700">
+      <div className={`bg-white dark:bg-dark-800 border-t border-gray-200 dark:border-dark-700${mobileMenuOpen ? ' block' : ' hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
           {pages.map((page) => (
             <NavLink
@@ -121,6 +121,7 @@ export default function NavBar() {
                 : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-dark-700'
                 }
               `}
+              onClick={() => setMobileMenuOpen(false)}
             >
               {page.name}
             </NavLink>

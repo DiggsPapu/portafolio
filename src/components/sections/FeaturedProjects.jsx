@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { featuredProjects } from '@data/projects'
 
 function FeaturedProjects() {
+  console.log('Featured Projects:', featuredProjects)
   return (
     <div className="container mx-auto px-4">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-dark-900 dark:text-white">
@@ -37,7 +38,7 @@ function FeaturedProjects() {
 
             <div className="p-8 md:w-1/2">
               <h3 className="text-2xl font-bold mb-2 text-dark-900 dark:text-white">{project.title}</h3>
-              <p className="text-dark-600 dark:text-gray-300 mb-4">{project.description}</p>
+              <p className="text-dark-600 dark:text-gray-300 mb-4">{project.long_description}</p>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag) => (
