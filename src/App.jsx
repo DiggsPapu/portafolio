@@ -18,7 +18,7 @@ function App() {
       <main className="container mx-auto px-4 py-20">
         <Suspense fallback={<div className="text-center py-20">Loading...</div>}>
           <Routes>
-            <Route path="/portafolio/" element={<Home />} />
+            <Route path="/portafolio" element={<Home />} />
             <Route path="/portafolio/about" element={<About />} />
             <Route path="/portafolio/experience" element={<Experience />} />
             <Route path="/portafolio/projects" element={<Projects />} />

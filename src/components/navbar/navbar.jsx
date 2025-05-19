@@ -47,12 +47,12 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <NavLink
-            to="/portafolio"
+            to="/portafolio/home"
             className="flex items-center"
           >
             <span className="ml-2 text-xl font-bold text-dark-900 dark:text-white">
-              Diego
-              <span className="text-primary-500">Alonzo</span>
+              Diggs
+              <span className="text-primary-500">Papu</span>
             </span>
           </NavLink>
 

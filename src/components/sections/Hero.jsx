@@ -10,6 +10,8 @@ function Hero() {
     2000,
     'Data Science Enthusiast',
     2000,
+    'CI/CD Noob',
+    2000,
     'Software Engineer',
     2000,
     'Problem Solver',

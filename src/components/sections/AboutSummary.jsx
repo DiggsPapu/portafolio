@@ -83,7 +83,7 @@ function AboutSummary() {
                   <li>
                     <strong>Name:</strong>
                     {' '}
-                    Diego Andrés Alonzo
+                    Diego Andrés Alonzo Medinilla
                   </li>
                   <li>
                     <strong>Location:</strong>
@@ -93,7 +93,7 @@ function AboutSummary() {
                   <li>
                     <strong>Email:</strong>
                     {' '}
-                    diggspapu@example.com
+                    diego.alonzom@gmail.com
                   </li>
                 </ul>
               </div>
