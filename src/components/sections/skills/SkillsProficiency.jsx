@@ -29,7 +29,7 @@ function SkillsProficiency() {
               whileInView={{ width: `${skill.level}%` }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="skill-bar-fill"
+              className="bg-yellow-400 h-1.5 rounded-full"
             />
           </div>
         </motion.div>

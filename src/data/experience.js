@@ -31,8 +31,8 @@ export const experiences = [
     technologies: ['Databricks', 'Python', 'Spark/PySpark', 'Github Actions', 'Pipelines', 'SQL', 'Github Actions', 'Power BI', 'Github'],
   },
   {
-    id: 4,
-    role: 'Full Stack Developer',
+    id: 3,
+    role: 'Freelance Full Stack Developer',
     company: 'Cargaóptima',
     duration: 'June 2024 - Jan 2025',
     responsibilities: [
@@ -47,7 +47,7 @@ export const experiences = [
       'Managed the deployment process and ensured smooth transitions to production.',
       'Provided technical support and troubleshooting for web applications.',
     ],
-    technologies: ['Python', 'Javascript', 'DjangoREST', 'NextJS', 'Docker', 'GCP', 'Shell', 'Github'],
+    technologies: ['Python', 'Javascript', 'DjangoREST', 'NextJS', 'Docker', 'GCP', 'Shell', 'Github', 'Postman'],
   },
   {
     id: 4,
@@ -68,8 +68,8 @@ export const experiences = [
     technologies: ['OracleDB', 'PLSQL/SQL', 'Python', 'Airflow', 'Php', 'ELT/ETL', 'Github'],
   },
   {
-    id: 4,
-    role: 'Full Stack Developer',
+    id: 5,
+    role: 'Freelance Full Stack Developer',
     company: 'Cosmetic Company',
     duration: 'Jan 2023 - Dec 2023',
     responsibilities: [
@@ -78,7 +78,7 @@ export const experiences = [
       'Implemented a Database schema for efficient data storage and retrieval, using supabase.',
       'Designed and optimized functions and views for data access.',
     ],
-    technologies: ['Angular', 'TailwindCSS', 'Supabase', 'Postgresql', 'Github'],
+    technologies: ['Angular', 'TailwindCSS', 'Supabase', 'Postgresql', 'Github', 'Postman'],
   },
 ]
 

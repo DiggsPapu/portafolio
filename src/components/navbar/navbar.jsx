@@ -47,7 +47,7 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <NavLink
-            to="/portafolio/home"
+            to="/portafolio/"
             className="flex items-center"
           >
             <span className="ml-2 text-xl font-bold text-dark-900 dark:text-white">

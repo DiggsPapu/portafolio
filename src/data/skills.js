@@ -45,14 +45,11 @@ export const skillsSummary = [
 ]
 
 export const topSkills = [
-  { name: 'Python', level: 90 },
-  { name: 'JavaScript', level: 85 },
-  { name: 'React', level: 85 },
-  { name: 'Databricks', level: 80 },
-  { name: 'SQL', level: 85 },
-  { name: 'Node.js', level: 80 },
+  { name: 'Databricks (Data Engineer)', level: 80 },
   { name: 'Data Analysis', level: 75 },
-  { name: 'Flutter', level: 70 },
+  { name: 'PLSQL/SQL', level: 90 },
+  { name: 'Python', level: 80 },
+  { name: 'JavaScript', level: 75 },
 ]
 
 export const skillCategories = [
@@ -73,12 +70,11 @@ export const skillCategories = [
     name: 'Frontend',
     skills: [
       { name: 'React', icon: '⚛️', level: 85 },
+      { name: 'Next.js', icon: '⏭️', level: 80 },
       { name: 'Angular', icon: '🅰️', level: 75 },
       { name: 'HTML/CSS', icon: '🎨', level: 90 },
       { name: 'Tailwind', icon: '💨', level: 80 },
-      { name: 'Flutter', icon: '📱', level: 70 },
       { name: 'Redux', icon: '🔄', level: 75 },
-      { name: 'Next.js', icon: '⏭️', level: 70 },
     ],
   },
   {
@@ -87,7 +83,7 @@ export const skillCategories = [
       { name: 'Node.js', icon: '🟢', level: 80 },
       { name: 'Express', icon: '🚂', level: 75 },
       { name: 'Django', icon: '🐍', level: 70 },
-      { name: 'Flask', icon: '🍶', level: 65 },
+      { name: 'FastAPI', icon: '🍶', level: 65 },
       { name: 'GraphQL', icon: '📈', level: 70 },
       { name: 'REST APIs', icon: '🔌', level: 85 },
     ],
@@ -105,12 +101,11 @@ export const skillCategories = [
   {
     name: 'DevOps',
     skills: [
-      { name: 'Docker', icon: '🐳', level: 75 },
+      { name: 'Docker', icon: '🐳', level: 60 },
       { name: 'Git', icon: '🔄', level: 85 },
-      { name: 'AWS', icon: '☁️', level: 70 },
-      { name: 'Azure', icon: '🔷', level: 65 },
+      { name: 'AWS', icon: '☁️', level: 20 },
       { name: 'Linux', icon: '🐧', level: 80 },
-      { name: 'CI/CD', icon: '🔄', level: 75 },
+      { name: 'CI/CD', icon: '🔄', level: 30 },
     ],
   },
 ]
@@ -122,12 +117,12 @@ export const toolsTechnologies = [
   { name: 'Jupyter', icon: '📓', category: 'Notebooks' },
   { name: 'Postman', icon: '📬', category: 'API Testing' },
   { name: 'Figma', icon: '🎨', category: 'Design' },
-  { name: 'Tableau', icon: '📊', category: 'Visualization' },
+  { name: 'Power BI', icon: '📊', category: 'Visualization' },
   { name: 'Databricks', icon: '🔮', category: 'Data Platform' },
   { name: 'MongoDB', icon: '🍃', category: 'Database' },
   { name: 'PostgreSQL', icon: '🐘', category: 'Database' },
   { name: 'Neo4j', icon: '🕸️', category: 'Database' },
-  { name: 'Firebase', icon: '🔥', category: 'Backend' },
+  { name: 'OracleDB', icon: '🔥', category: 'Database' },
   { name: 'Heroku', icon: '🦸', category: 'Hosting' },
   { name: 'Vercel', icon: '▲', category: 'Hosting' },
   { name: 'NPM', icon: '📦', category: 'Package Manager' },
