@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { certifications } from '../../../data/certifications'
+import { courses } from '@data/courses'
 
 function Certifications() {
   return (
@@ -9,11 +9,11 @@ function Certifications() {
         <h2 className="text-3xl font-bold text-center mb-12">
           My
           {' '}
-          <span className="text-yellow-500">Certifications</span>
+          <span className="text-yellow-500">Courses</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {certifications.map((cert, index) => (
+          {courses.map((cert, index) => (
             <motion.div
               key={cert.id}
               initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ function Certifications() {
                   rel="noopener noreferrer"
                   className="mt-4 inline-block text-yellow-500 hover:underline"
                 >
-                  View Credential
+                  View Course Completion
                 </a>
                 )}
               </div>

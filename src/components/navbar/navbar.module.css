@@ -22,3 +22,44 @@
     position: relative;
     margin-right: 10px;
 }
+
+.active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #1a1a1a;
+}
+
+.logoLink {
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.navLink:hover {
+  border-bottom: 2px solid white;
+}
+
+.active {
+  border-bottom: 2px solid #6421ff;
+}
+
+.dropdown {
+  margin-left: auto;
+}
