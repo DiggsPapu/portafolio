@@ -1,11 +1,11 @@
 export const education = [
   {
     id: 1,
-    degree: 'Engineering in Computer Science',
-    institution: 'Universidad del Valle de Guatemala',
-    duration: '2022 - Present',
-    description: 'Currently in my last year, getting an specialization in artificial intelligence.',
-    gpa: '3.8/4.0',
+    degree: 'Bachelor Science and Letters',
+    institution: 'Liceo Javier',
+    duration: '2007 - 2019',
+    description: 'School and college.',
+    gpa: '90/100',
   },
   {
     id: 2,
@@ -17,10 +17,10 @@ export const education = [
   },
   {
     id: 3,
-    degree: 'Bachelor Science and Letters',
-    institution: 'Liceo Javier',
-    duration: '2007 - 2019',
-    description: 'School and college.',
-    gpa: '90/100',
+    degree: 'Engineering in Computer Science',
+    institution: 'Universidad del Valle de Guatemala',
+    duration: '2022 - Present',
+    description: 'Currently in my last year, getting an specialization in artificial intelligence.',
+    gpa: '3.8/4.0',
   },
 ]

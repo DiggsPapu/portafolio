@@ -32,7 +32,7 @@ function Skills() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl md:text-2xl text-dark-700 dark:text-gray-300 max-w-3xl mx-auto"
         >
-          Technologies and tools I've mastered through years of practice and professional work
+          Technologies and tools I've learned through practice, hard work, and rockn' roll.
         </motion.p>
 
         <motion.div
