@@ -12,7 +12,7 @@ function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-50/30 to-primary-100/10 dark:from-dark-800/90 dark:to-dark-900/80 z-0" />
-        <div className="absolute inset-0 bg-[url('@assets/images/pattern-light.svg')] dark:bg-[url('@assets/images/pattern-dark.svg')] bg-fixed opacity-10 dark:opacity-5 z-0" />
+        <div className="absolute inset-0 bg-[url('@assets/images/pattern-light.jpg')] dark:bg-[url('@assets/images/pattern-dark.webp')] bg-fixed opacity-10 dark:opacity-5 z-0" />
 
         <Hero />
       </section>
