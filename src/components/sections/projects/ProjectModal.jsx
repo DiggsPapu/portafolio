@@ -32,7 +32,7 @@ function ProjectModal({ project, onClose }) {
 
             <div>
               <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">{project.longDescription}</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
 
               <div className="mb-6">
                 <h3 className="font-bold mb-2">Technologies Used:</h3>

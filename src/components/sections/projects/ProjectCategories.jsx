@@ -4,9 +4,9 @@ function ProjectCategories({ filter, setFilter }) {
   const categories = [
     { id: 'all', name: 'All Projects' },
     { id: 'web', name: 'Web Development' },
-    { id: 'mobile', name: 'Mobile Apps' },
+    { id: 'backend', name: 'Backend Development' },
     { id: 'data', name: 'Data Projects' },
-    { id: 'ai', name: 'AI/ML' },
+    { id: 'artificial intelligence', name: 'AI/ML Projects' },
   ]
 
   return (
