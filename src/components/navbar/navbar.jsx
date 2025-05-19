@@ -76,7 +76,7 @@ export default function NavBar() {
 
             {/* Contact Dropdown */}
             <div className="relative group ml-2">
-              <button type="button" className="flex items-center px-4 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-all shadow-md">
+              <button className="flex items-center px-4 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-all shadow-md">
                 Contact Me
                 <FiExternalLink className="ml-2 w-4 h-4" />
               </button>
